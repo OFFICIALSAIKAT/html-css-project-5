@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    padding: 10px;
+    
+}
+.navbar::before{
+    content: "";
+    background-color:black;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+    
+}
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-right: 100px;
+    margin-top: 15px;
+    
+}
+.list-item{
+    margin: 0px 20px ;
+    color: white;
+    font-size: 20px;
+    
+}
+.button-small{
+    height: 40px;
+    width: 100px;
+    margin-top: 4px;
+    border: none;
+    border-radius: 5px;
+    background-color: #D256D6;
+    color: white;
+}
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 180px 220px;
+    
+}
+.hero-heading{
+    font-size: 70px;
+    color: white;
+    align-items: center;
+    /* margin: 30px 180px; */
+    margin: auto;
+    
+} 
+.hero-description{
+    font-size: 35px;
+    color: white;
+
+    margin-top: 25px;
+}
+.button-large{
+    height: 60px;
+    width: 180px;
+    border-radius: 5px;
+    border: none;
+    margin: 35px 0px;
+    background-color: #D256D6;
+    color: white;
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    background: url("assets/bg.png");
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+    height: 842px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -3;
+    opacity: 0.69;
+}
+.logo{
+    
+    height: 40px;
+    margin-top: 5px;
+}
+.line{
+    color: white;
+    
+    
+}
