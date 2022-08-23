@@ -1,58 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap"
-      rel="stylesheet"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8bc5c06ed1.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
 
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="container">
-      <section aria-label="navbar">
-        <nav class="navbar">
-          <div>
-            <img src="./assets/white-logo.png" alt="logo" class="logo" />
-          </div>
-          <div class="line">|</div>
-          <div class="grow-list">
-            <ul class="list">
-              <li class="list-item">Apps</li>
-              <li class="list-item">DAO</li>
-              <li class="list-item">Technology</li>
-              <li class="list-item">Token</li>
-              <li class="list-item">Contributors</li>
-            </ul>
-          </div>
-          <div>
-            <button class="button-small">Buy 1 Token</button>
-          </div>
-        </nav>
-      </section>
-      <!-- Hero Section -->
-      <section aria-label="hero">
-        <div class="hero">
-          <h1 class="hero-heading">Lets build a better tomorrow, together.</h1>
-          <p class="hero-description">
-            Buy 1 Token. Join the DAO. Change the world
-          </p>
-          <button class="button-large">Request Early Access</button>
+    <nav>
+        
+        <img src="./assets/white-logo.png" alt="">
+       
+            <div class="navigation">
+                <ul>
+                    <i id="menu-close" class="fa-solid fa-circle-xmark"></i>
+                    <li><a href="#">Apps</a><i id="drop" class="fa-solid fa-caret-down"></i></li>
+                    <li><a href="">DAO</a></li>
+                    <li><a href="">Technology</a></li>
+                    <li><a href="">Token</a></li>
+                    <li><a href="">Contributors</a></li>
+                  <li><button class="button">Buy 1 Token</button></li>
+                </ul>
+                <i id="menu-btn" class="fa-solid fa-bars"></i>
+            </div>
+    </nav>
+
+    <!-- Home -->
+    <header id="color">
+    <section id="home">
+        <h2>Let's build a better tomorrow together.</h2>
+        <p>Buy 1 token. Join the DAO. Change the world.</p>
+        
+        <div class="btn">
+            <a class="blue" href="">Request Early Access</a>
+            
         </div>
-      </section>
-    </div>
-    
-  </body>
+    </section>
+
+</header>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    $('#menu-btn').click(function(){
+      $('nav .navigation ul').addClass('active')
+    });
+
+    $('#menu-close').click(function(){
+      $('nav .navigation ul').removeClass('active')
+    });
+  </script>
+
+</body>
 </html>
